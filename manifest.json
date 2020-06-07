@@ -1,0 +1,21 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/ic24_off.png",
+      "default_popup": "popup.html"
+   },
+   "default_locale": "en_US",
+   "description": "proxy useragent",
+   "icons": {
+      "128": "images/ic128.png",
+      "19": "images/ic24_off.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2sozygKyvdzYf1U6Y3RnFZ8w1UI2gmhjOpdD83eCmoMJo8W2HK8sqDk3FiM9AQIDxLy25hLCi3MLxDnE96HW7bmtdezn3xDF5ElEgFZ7RTNEKAD3GslJwkgMwhn08dSSSEYjI4xmm6+n9oFcq/avBMAVovxS/7zrTUXy3r0EvNuouox6Olu4sVraVO2aTuV7HA43reGcyTP7thHCFM70UQj0k3/4DR17IAw7xVxQkLDusN6vn3ozlxlDDcd4Pn71M64vwCFd4lC0iJnH3pKzJKsK/hFqb2B3tRzjBkkJTKdFPm/sAoBQgG8i+OShAJV51ZIBAnvHcMsSXBWFjNy9bQIDAQAB",
+   "manifest_version": 2,
+   "name": "EpicProxy",
+   "permissions": [ "declarativeWebRequest", "privacy", "proxy", "tabs", "storage", "webRequest", "webRequestBlocking", "\u003Call_urls>", "*://*/*" ],
+   "update_url": "http://updates.epicbrowser.com/extensions/updates.xml",
+   "version": "7.3.2"
+}

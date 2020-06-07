@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="toggle.js" type="text/javascript"></script>
+<!-- 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Settings</title> -->
+
+<link rel="stylesheet" href="style.css"/>
+
+<!-- <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script> -->
+
+
+</head>
+
+<body class="back">
+
+<div style="margin-top:10px">
+
+</div>  
+<div class="container"><a class="tooltip"><img src="images/help.png" style="margin-left:-4px; margin-top:-5px" ><span>
+<!--  <img class="callout" src="images/arrow.png" alt="CSS Tooltip triggered by image"> -->
+<!--<p > 
+<b><font size="2">Block Third-party Cookies</font></b>
+<br><font size="1px"> jquery-3.1.1.min
+Third Party cookies are usually trackers, hence blocked. </font>
+ </p>-->
+<!--  <p>
+<b><font size="2">Enable Plugins</font></b>
+<br><font size="1px"> 
+If you're concerned about your security or privacy at a site, set to "No".</font>
+</p> -->
+<p>
+<!--<b><font size="2">Encrypted Proxy</font></b><br>-->
+<font size="2px"> 
+<p></p><b>Epic's encrypted proxy</b> hides your IP address and location.  You will appear to be in the country you select.  Encryption and IP masking protects your browsing from hackers, trackers, your ISP and the government. <br><br>Since you will appear to be in a new location, sites such as Facebook, Gmail and others may require additional authentication.  Don't worry that's actually a good sign and more secure.<br><br>Your browsing speeds may be slightly slower.  If a site doesn't load, try turning the proxy off (some sites block proxies).<br><br>Plugins can still leak your IP address.  For maximum privacy, set plugins to click-to-play or disable them in Epic's Settings (under Privacy click on Content Settings).<p></p></font>
+</p>
+<!-- <p>
+<b><font size="2">Block Ads and Trackers</font></b>
+<br><font size="1px">
+Ads are blocked because they contain trackers.</font>
+</p>   -->
+<!--<p>
+<b><font size="2">Do Not Track Me</font> </b>
+<br><font size="1px">
+Epic requests websites not to track you.  Unfortunately, most ignore
+this which is why we actively block thousands of trackers too :-)</font>
+</p>-->
+</span>
+</a>
+<div id='current_domain' style="display:none; min-width:300px;padding-left: 7px;font-size:20px;padding:8px;margin:4px;color:#8D8D8D; margin-top:-35px"> 
+<!--  New Tab -->
+</div>
+<!-- <hr class="sethr" color="#E0DCDD" size="1" /> -->
+<!--<div id="slot1">
+ <div class="content">
+ Block Third Party Cookies
+ </div>
+ <div class="button" id="tpc">
+  <span id="tpc_N" style="color:#CCCCCC;"><font face="Arial" size="2"> No </font>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <span id="tpc_Y" style="color:black;"><font face="Arial" size="2"> Yes </font>&nbsp;&nbsp; </span>
+ </div>
+ 
+</div> -->
+<br><br>
+<div class="slot" style="margin-top:0px; min-width:250px;padding-left: 7px;font-size:14px;padding:0px;margin:0px;color:#8D8D8D;">
+ <div class="content" style=font-size:19px;color:#8D8D8D;>
+  &nbsp;&nbsp;&nbsp;<img src="/images/epicsmall.png" align="center" height="35"/>&nbsp;epic's encrypted proxy:&nbsp;&nbsp;
+
+ 
+ </div>
+ <br/>
+  <div class="button" id="plugins" style="font-size:24px;">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <span id="plugins_Y" >&nbsp;&nbsp;<font face="Arial"> On </font>&nbsp;&nbsp;</span><span id="plugins_N" >&nbsp;&nbsp;<font face="Arial" > Off </font> &nbsp;&nbsp;</span>
+ </div>
+ 
+ <!--  <div class="container">
+    <div id='current_domain' style="min-width:300px;padding-left: 7px;font-size:20px;padding:8px;margin:4px;color:#8D8D8D; margin-top:-35px"> 
+     <br/>
+    
+      <div >
+       ON
+        <label class="switch">
+          <input type="checkbox" name="mycheckbox" id="proxy_ED" value="0" />
+         <div class="slider"></div>
+        </label>    
+      </div>
+    </div>
+  </div> -->
+  
+  <!--   <h1>Form Demo</h1> 
+  <div id="mycheckboxdiv" style="display:none">-->
+<!--   <h2 style="background-color:#F2EBE1;"> -->
+<h2 style="background-color:#F2EFE9">
+    <form>
+      <fieldset>
+      
+       <legend>Select Country</legend>
+       
+       
+          <label ><div align="texttop"> 
+              <input type = "radio"
+                 name = "radSize"
+                 id = "eastUSAProxy"y
+                 value = "eastUSA" />
+                 &nbsp
+                 <img src="/images/flags/us.png" alt="US East Coast Encrypted Proxy" />&nbsp&nbspUS East Coast (default)</div>
+                 </label>
+                 <br/>
+
+
+          <label ><div align="texttop"> 
+            <input type = "radio"
+                 name = "radSize"
+                 id = "westUSAProxy"
+                 value = "westUSA" />
+                 &nbsp
+            <img src="/images/flags/us.png" alt="US Encrypted Proxy" />&nbsp&nbspUS West Coast&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            </label>
+          <br/>
+
+          <label ><div align="texttop"> 
+            <input type = "radio"
+                 name = "radSize"
+                 id = "CanadaProxy"
+                 value = "Canada" />
+                 &nbsp
+            <img src="/images/flags/ca.png" alt="Canada Encrypted Proxy" />&nbsp&nbspCanada&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            </label>
+          <br/>                             
+
+          <label ><div align="texttop"> 
+            <input type = "radio"
+                 name = "radSize"
+                 id = "uk"
+                 value = "uk" />
+                 &nbsp
+            <img src="/images/flags/gb.png" alt="UK Encrypted Proxy" />&nbsp&nbspUK&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            </label>
+          <br/>
+          <label ><div align="texttop"> 
+            <input type = "radio"
+                 name = "radSize"
+                 id = "deProxy"
+                 value = "Germany" />
+                 &nbsp
+            <img src="/images/flags/de.png" alt="Germany Encrypted Proxy" />&nbsp&nbspGermany&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            </label>
+          <br/>        
+          <label ><div align="texttop"> 
+            <input type = "radio"
+                 name = "radSize"
+                 id = "lyonFranceProxy"
+                 value = "FRANCE" />
+                 &nbsp
+            <img src="/images/flags/fr.png" alt="France Encrypted Proxy" />&nbsp&nbspFrance&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            </label>
+          <br/>
+          <label ><div align="texttop"> 
+            <input type = "radio"
+                 name = "radSize"
+                 id = "NetherlandsProxy"
+                 value = "NETHERLANDS" />
+                 &nbsp
+            <img src="/images/flags/nl.png" alt="Netherlands Encrypted Proxy" />&nbsp&nbspNetherlands&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            </label>
+          <br/>
+          <label ><div align="texttop"> 
+            <input type = "radio"
+                 name = "radSize"
+                 id = "IndiaProxy"
+                 value = "INDIA" />
+                 &nbsp
+            <img src="/images/flags/in.png" alt="India Encrypted Proxy" />&nbsp&nbspIndia&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            </label>
+          <br/>
+          <label ><div align="texttop"> 
+            <input type = "radio"
+                 name = "radSize"
+                 id = "singapore"
+                 value = "singapore" />
+                 &nbsp
+            <img src="/images/flags/sg.png" alt="Singapore Encrypted Proxy" />&nbsp&nbspSingapore&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            </label>
+          <!-- <br/> -->
+<!-- 
+          <input type = "radio"
+                 name = "radSize"
+                 id = "eastUSAProxy"
+                 value = "eastUSA" />
+          <label for = "eastUSA">US East Coast (default)</label>
+          <br/>
+          <input type = "radio"
+                 name = "radSize"
+                 id = "westUSAProxy"
+                 value = "westUSA" />
+          <label for = "westUSA">US West Coast</label>
+          <br/> 
+-->
+<!--           <label ><input type = "radio"
+                 name = "radSize"
+                 id = "IrelandProxy"
+                 value = "IRELAND" />
+                 &nbsp
+          <img src="/images/flags/ie.png" alt="Ireland Encrypted Proxy" />&nbsp&nbspIreland&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+          <br/>
+ -->          
+
+ <!--          <label ><input type = "radio"
+                 name = "radSize"
+                 id = "SpainProxy"
+                 value = "SPAIN" />
+                 &nbsp
+          <img src="/images/flags/es.png" alt="Spain Encrypted Proxy" />&nbsp&nbspSpain&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+          <br/>
+          <label ><input type = "radio"
+                 name = "radSize"
+                 id = "PortugalProxy"
+                 value = "PORTUGAL" />
+                 &nbsp
+          <img src="/images/flags/pt.png" alt="Portugal Encrypted Proxy" />&nbsp&nbspPortugal&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+          <br/>
+          <label ><input type = "radio"
+                 name = "radSize"
+                 id = "itProxy"
+                 value = "ITALY" />
+                 &nbsp
+          <img src="/images/flags/it.png" alt="Italy Encrypted Proxy" />&nbsp&nbspItaly&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+          <br/>       
+  -->         
+ <!--          <label ><input type = "radio"
+                 name = "radSize"
+                 id = "BelgiumProxy"
+                 value = "BELGIUM" />
+                 &nbsp
+          <img src="/images/flags/be.png" alt="Belgium Encrypted Proxy" />&nbsp&nbspBelgium&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+          <br/>
+          <label ><input type = "radio"
+                 name = "radSize"
+                 id = "FinlandProxy"
+                 value = "FINLAND" />
+                 &nbsp
+          <img src="/images/flags/fi.png" alt="Finland Encrypted Proxy" />&nbsp&nbspFinland&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+          <br/>
+          <label ><input type = "radio"
+                 name = "radSize"
+                 id = "CzechRepublicProxy"
+                 value = "CRECHREPUBLIC" />
+                 &nbsp
+          <img src="/images/flags/cz.png" alt="Czech Republic Encrypted Proxy" />&nbsp&nbspCzech Republic&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+          <br/>
+          <label ><input type = "radio"
+                 name = "radSize"
+                 id = "PolandProxy"
+                 value = "POLAND" />
+                 &nbsp
+          <img src="/images/flags/pl.png" alt="Poland Encrypted Proxy" />&nbsp&nbspPoland&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+          <br/>
+          <label ><input type = "radio"
+                 name = "radSize"
+                 id = "LithuaniaProxy"
+                 value = "LITHUANIA" />
+                 &nbsp
+          <img src="/images/flags/li.png" alt="Lithuania Encrypted Proxy" />&nbsp&nbspLithuania&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+          <br/>
+ -->          
+
+<!--  <br/>
+          <input type = "radio"
+                 name = "radSize"
+                 id = "chicagoUSAProxy"
+                 value = "chicagoUSA" />
+          <label for = "chicagoUS">Chicago, USA</label>
+          <br/>
+          <input type = "radio"
+                 name = "radSize"
+                 id = "sanFranciscoUSAProxy"
+                 value = "sanFranciscoUSA" />
+          <label for = "sanFranciscoUS">San Francisco, USA</label>   
+-->         
+         
+             
+      </fieldset>     
+    </form>
+
+
+</h2>
+
+
+
+<!--
+<div class="slot">
+ <div class="content">
+ Encrypted Data 
+ </div>
+  <div class="button" id="httpAllowed">
+  <span id="httpAllowed_N" style="color:#CCCCCC;"><font face="Arial" size="2"> No </font>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <span id="httpAllowed_Y" style="color:black;"><font face="Arial" size="2"> Yes </font>&nbsp;&nbsp; </span>
+ </div>
+ 
+</div>
+
+<div class="slot">
+ <div class="content">
+ Block Ads & Trackers
+ </div>
+  <div class="button" id="adsAllowed">
+  <span id="adsAllowed_N" style="color:#CCCCCC;"><font face="Arial" size="2"> No </font>&nbsp;&nbsp;&nbsp;&nbsp; </span>
+  <span id="adsAllowed_Y" style="color:black;"><font face="Arial" size="2"> Yes </font>&nbsp;&nbsp; </span>
+ </div>
+ 
+</div>
+
+<div class="slot">
+ <div class="content">
+ Do Not Track Me
+ </div>
+ <div class="button" id="trackMeAllowed">
+  <span id="trackMeAllowed_N" style="color:#CCCCCC;"><font face="Arial" size="2"> No </font>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <span id="trackMeAllowed_Y" style="color:black;"><font face="Arial" size="2"> Yes </font>&nbsp;&nbsp; </span>
+ </div>
+ 
+</div>
+
+<hr class="sethr" color="#E0DCDD" size="1" />
+<div class="slot" style="padding-bottom:0px">
+ <div class="content">
+  See WOT Rating
+ </div>
+ <div class="button" id="seeWotRating">
+ <div class="link"><a href="#" style="padding-left:33px;color:#000000;"><font face="Arial" size="2"> View </font></a></div>
+ </div>
+</div>
+
+<div class="slot" style="padding-bottom:0px">
+ <div class="content">
+  See Trackers Blocked
+ </div>
+ <div class="button" id="seeTrackers">
+ <div class="link"><a href="#" style="padding-left:33px;color:#000000;"><font face="Arial" size="2"> View </font></a></div>
+ </div>
+</div>
+
+<div class="slot" style="padding-bottom:0px">
+ <div class="content">
+  Adblock options 
+ </div>
+ <div class="button" id="adboptions">
+ <div class="link"><a href="#" style="padding-left:33px;color:#000000;"><font face="Arial" size="2"> View </font></a></div>
+ </div>
+</div>
+
+<hr class="sethr" color="#E0DCDD" size="1" />
+<div class="slot">
+ <div class="content" style="color:#999999 !important;">
+ Trackers (Notifications)
+ </div>
+  <div class="button" id="trackersBlocked">
+  <span id="trackersBlocked_N" style="color:#666666;"><font face="Arial" size="1.5"> Off </font>&nbsp;&nbsp;&nbsp;&nbsp; </span>
+  <span id="trackersBlocked_Y" style="color:#CCCCCC;"><font face="Arial" size="1.5"> On </font>&nbsp;&nbsp; </span>
+ </div> -->
+
+
+ 
+</div>
+<!--
+<div class="slot" >
+<div class="button"><div class="save"><input type="button" value="Save changes"/></div></div>
+<div class="button"><div class="revert_changes"><input type="button" value="Reset changes"/></div></div>
+</div>-->
+
+</div>
+
+</body>
+</html>
+

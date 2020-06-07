@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+ -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+.back
+{
+	margin-left:8px;
+	margin-top:0px;
+	outline:none;
+	border:#adadad;
+	padding:none;
+	background:#FFFFFF;
+}
+
+.container
+{
+background:#FFFFFF;
+border:0px solid #E0DCDD;
+min-width:280px;
+width:285px;
+margin:5px;
+color:#8D8D8D;
+border-top: none;
+border-bottom: none;
+border-right: none;
+}
+
+.content
+{
+padding-left: 7px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+min-width: 187px;
+float: left;
+padding-top: 0px;
+color:#59474E;
+}
+
+#slot1
+{
+padding-top: 2px;
+padding-left: 9px;
+height: 35px;
+}
+
+#slot1:hover
+{
+cursor: hand; 
+cursor: pointer;
+background:#EBEBEB;
+}
+
+.slot
+{
+padding-left: 9px;
+position: relative;
+padding-top: 2px;
+top: -7px;
+}
+
+/*testing stuff below*/
+
+h2 {
+  color: #AAAAAA;
+  font-weight: normal;
+  font-size:16px;
+}
+
+label{
+ vertical-align: middle;
+}
+input[type="radio"] {
+ float:left;
+ color:black;
+}
+
+
+/*testing stuff above*/
+
+/*test below */
+/*
+#plugins_N{ 
+padding: 5px 5px;
+margin: 5px 5px;
+display: inline-block;
+text-transform: uppercase;
+font-weight: 700;
+outline: none;
+position: relative;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+background: #cb4e4e;
+color: #fff;
+box-shadow: 0 6px #ab3c3c;
+-webkit-transition: none;
+-moz-transition: none;
+transition: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+#plugins_Y{
+padding: 5px 5px;
+margin: 5px 5px;
+display: inline-block;
+text-transform: uppercase;
+font-weight: 700;
+outline: none;
+position: relative;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+background: #22A36D;
+color: #018A01;
+box-shadow: 0 6px #094F26;
+-webkit-transition: none;
+-moz-transition: none;
+transition: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+#plugins_Y:hover{
+box-shadow: 0 4px #094F26;
+top: 2px;
+}
+
+#plugins_N:hover{
+box-shadow: 0 0 #ab3c3c;
+top: 6px;
+}
+*/
+
+/*testing above
+below code works but on off are bit simple*/
+
+#plugins_N{
+    display:inline-block;
+    padding: 1px 1px 1px 1px;
+    border-color:#C4C2C2;
+    border-style:solid;
+    /*background:#D97C96;*/
+    background: white;		// Ran 
+}
+#plugins_Y{
+    display:inline-block;
+    padding: 1px 1px 1px 1px;
+    border-color:#C4C2C2;
+    border-style:solid;
+    /*background:#72B599;*/
+    background: white;        // Ran
+}
+
+/*#plugins_N:hover
+{
+cursor: hand; 
+cursor: pointer;
+background:#D97C96;
+
+}
+#plugins_Y:hover
+{
+cursor: hand; 
+cursor: pointer;
+background:#72B599;
+}
+*/
+
+.icon
+{
+float: left;
+padding-top: 3px;
+}
+
+.button
+{
+	padding-top: 2px;
+}
+
+.sethr
+{
+	position: relative;
+	width:100%;
+}
+ /* trigger button */
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:10;display:none; padding:1px 20px;
+    margin-top:20px;
+    margin-left:-192px;
+	width:240px; 
+
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0;}
+.callout {z-index:20;position:absolute;top:3px;border:0;left:-10px;}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+        
+    -moz-box-shadow: 5px 5px 8px #CCC;
+    -webkit-box-shadow: 5px 5px 8px #CCC;
+    box-shadow: 5px 5px 8px #CCC;
+}
