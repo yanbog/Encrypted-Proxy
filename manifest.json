@@ -15,5 +15,5 @@
    "manifest_version": 2,
    "name": "Encrypted-Proxy",
    "permissions": ["privacy", "proxy", "tabs", "storage", "webRequest", "webRequestBlocking", "\u003Call_urls>", "*://*/*" ],
-   "version": "7.3.04"
+   "version": "7.3.06"
 }
